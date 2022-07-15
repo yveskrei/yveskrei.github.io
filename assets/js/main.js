@@ -45,6 +45,14 @@ $(window).keydown(function(event) {
 	}
 })
 
+$(window).on('swipeleft', function() {
+	$('#magazine').turn('next')
+});
+
+$(window).on('swiperight', function() {
+	$('#magazine').turn('previous')
+});
+
 //TypeWriter variables
 let noteIndex = 0;
 let writerPage = null
