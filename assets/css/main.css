@@ -1,0 +1,107 @@
+@font-face {
+  font-family: Assistant;
+  src: url(Assistant-Bold.ttf);
+}
+
+@font-face {
+  font-family: Sinaa;
+  src: url(Sinaa-Black.ttf);
+}
+
+span, h1, p {
+	 direction: rtl;
+	 text-align: right;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: Assistant, monospace;
+}
+
+body{
+  background:#ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#magazine{
+	height: 90%;
+	width: 38%;
+	min-width: 389px;
+    min-height: 591px;
+	align-self: center;
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#magazine .magazine-page {
+	background-image:url(../images/page.png);
+	background-color:#ccc;
+	background-size:100% 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	min-height: 591px;
+	min-width: 389px;
+}
+
+.magazine-page.page-4 h1 {
+	font-family: Sinaa;
+	font-size: 4.3vw;
+	text-align: center;
+	color: #601A00;
+	line-height: 1.6em;
+	margin-top: 15vh;
+	
+}
+
+.magazine-page.page-4 .logo {
+	width: 10vw;
+	height: auto;
+}
+
+.magazine-page .header {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	align-items: center;
+    height: 11vh;
+    width: calc(38vw - 40px);
+    padding: 10px 20px;
+}
+
+.magazine-page .header .logo {
+	height: 100%;
+	width: auto;
+}
+
+.magazine-page .header .logo.sufa {
+	height: 120%;
+	margin-top: 4%;
+}
+
+.magazine-page.page-3 .header h1 {
+	font-family: Sinaa;
+	font-size: 3vw;
+	color: #601A00;
+}
+
+.magazine-page p {
+	margin: 0;
+    padding: 2vw;
+    font-size: 1.6vw;
+    line-height: 1.6vw;
+}
+
+.magazine-page p.signature {
+	align-self: flex-start;
+}
